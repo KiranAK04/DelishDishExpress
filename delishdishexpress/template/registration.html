@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+	body{
+	background-color:black;
+}
+.container2 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the box */
+    align-items: center; /* Vertically centers the box */
+    height: 100vh; /* Example height for the container (adjust as needed) */
+}
+.box2 {
+    width: 300px; /* Set the width of the box */
+    height: 300px; /* Set the height of the box */
+    background-color: white; /* Set the background color of the box */
+    border: 1px solid #000; /* Add a border around the box */
+    padding: 20px; /* Add padding inside the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.box2 label{
+	text-align:left;
+	margin-left :10px;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.input{
+	width: 90%;
+}
+.large-button {
+    font-size: 7px; /* Set font size */
+    padding: 10px 20px; /* Set padding to increase clickable area */ 	
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: aqua;
+}
+</style>
+</head>
+<body>
+	<div class="container2">
+		<div class="box2">
+			<form method="post" action="" >
+				{% csrf_token %}
+				<h2>User login:</h2>
+				<label for="email">Email :</label><br>
+				<input  class="input" type="email" id="email" name="email" placeholder="Enter your Email" required><br><br> 
+				<label for="phone">Phone :</label><br>
+				<input class="input" type="tel" id="phone" name="Phone" placeholder="Enter Your phone number" required><br><br>
+				<!-- <label >Role :</label> 
+				Admin<input type="radio" name="role" value="admin" >
+				Customer<input type="radio" name="role" value="customer"><br><br> -->
+				<div class="button">
+				<input class="large-button" type="submit" value="SUBMIT">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhojan</title>
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: "Poppins", sans-serif;
+        }
+
+        
+        ::-webkit-scrollbar-thumb {
+            background: #d88b2a;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            --golden-puppy: hsl(47, 100%, 40%);
+        }
+        
+        ::-webkit-scrollbar-button {
+            height: 5px;
+        }
+        .two{font-size: 30px;
+            text-decoration: none;
+            color: whitesmoke;   
+        }
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#head-container{
+    display: flex;
+    width: 100%;
+    background-color: rgb(49, 49, 141);
+    padding: 10px 0 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#head-container .logo{
+    width: 10%; 
+}
+
+#head-container .logo img{
+    display: block;
+    width: auto;
+    margin: auto;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+#head-container nav{
+    /* border: 2px dotted red; */
+    width: 70%; 
+    /* flex-grow: 4;  */
+}
+
+#head-container nav ul{
+    display: flex;
+    margin-top: 18px;
+    flex-wrap: wrap;
+    /* margin-left: 1rem; */
+}
+
+#head-container nav ul li{
+    list-style: none;
+    /* flex-grow: 1; */
+    padding: 0 1rem 0 1rem;
+    font-size: 2rem;   
+}
+
+#head-container nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+
+#head-container nav ul li a:hover{        
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+#search{
+    /* border: 2px dotted red; */
+    /* flex-grow: 1.5; */
+    width: 20%;
+}
+
+#search input{
+    width: 80%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+#main{
+    background-image: url('https://static.fanpage.it/wp-content/uploads/sites/22/2020/05/iStock-1093661558-638x425.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+}
+
+.main_container{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 10rem;
+}
+
+#main h6{
+    text-align: center;
+    position: absolute;
+    font-size: 5rem;
+}
+
+#main p{
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem 3rem 0 3rem;
+}
+
+.btn{
+    background-color: rgb(165, 31, 31);
+    font-size: 2rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    width: 20%;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+
+
+#client{
+    /* border: 2px dotted black; */
+    background-image: url('https://www.fusion6.com.au/wp-content/uploads/2021/04/Indian-Dishes-You-Need-to-Try-1024x577.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    background-color: #000000a8;
+    color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+   
+}
+#services {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.box {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 150px;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.client_container{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+
+#client .box{
+    /* border: 2px dotted red; */
+    padding: 5 5rem;
+    margin: 1rem 4rem 0rem 5rem;
+    
+}
+
+#client .box img{
+     width: 10rem;
+    height: 10rem; 
+    /* width: 150px;
+    height: 150px; */
+}
+
+#contact{
+    /* border: 2px dotted black; */
+    background-image: url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+}
+
+#contact form{
+    /* border: 2px dotted red; */
+    width: 50%;
+    margin: 2rem auto;
+    margin-bottom: 1rem; 
+
+}
+
+#contact form label,textarea,input{
+    display: block;
+    font-size: 1.5rem;
+}
+
+#contact form input{
+    margin-bottom: 1rem;
+}
+
+#contact form textarea{
+    border-radius: 0.8rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer div{
+    text-align: center;
+}
+
+#head-container{
+    flex-direction: column;
+    align-items: center;
+    position: static;
+}
+
+#head-container .logo{
+    width: 100%;
+}
+
+#head-container nav{
+    width: 100%; 
+    
+}
+
+#head-container nav ul{
+    justify-content: center;
+}
+
+#search {
+    width: 100%
+}
+
+#search input{
+    margin:20px 20px 0 20px;
+    width: 60%;
+    margin: 20px auto 0 auto;
+}
+
+#main{
+    height: 445px;
+}
+
+.main_container{
+    top: 3rem;
+}
+
+#main h6{
+    font-size: 2rem;
+
+}
+
+#main p{
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.btn{
+    font-size: 1rem;
+    width: 30%;
+    height: 40px;
+    margin-top: 3rem;
+}
+
+
+#services{
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#services .box{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+
+
+#contact form{
+    width: 90%;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header id="head-container">
+        <div class="logo">
+    <img src="https://th.bing.com/th/id/R.8486bea355707fa8a3654dd30e6e5bc5?rik=HodHOVw9dG9eXA&riu=http%3a%2f%2fdreamydelish.com%2fwp-content%2fuploads%2f2023%2f03%2fScreenshot-2023-03-24-231623.png&ehk=fjovMBAyVilXqmcAKP7mdv4zJk9qRaW5Rty58AUiUa8%3d&risl=&pid=ImgRaw&r=0" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#scroll_services">Service</a></li>
+                <li><a href="#scroll_clients">Clients</a></li>
+                <li><a href="#scroll_contact">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <input type="text" name="search" placeholder="Search">
+        </div>
+    </header>
+    <div id="main">
+        <div class="overlay"></div>
+        <div class="main_container">
+            <h6 style="margin-left: 150px;">Welcome to DelishDishExpress</h6><br>
+            <p style="margin-left: 200px;">Food brings people together on many different levels. It’s nourishment of the soul and body; it’s truly love.</p>
+            <br><br>
+            
+    <a href="zomato.html"  style="padding-left: 150px;"  id="one" class="two">Order Now</a>
+            
+            
+        </div>
+
+    </div>
+    <h1 id="scroll_services">Our Services</h1>
+    <div id="services">
+        <div class="box" data-aos="fade-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIww3ydX26Nfun5iXxfZVYJ_kgYU27YN-2JbO-k52OTEH7o3ZN1POZZtujL7i5DDcJLxI&usqp=CAU" alt="">
+            <div class="content">
+                <h2>Food Catering</h2>
+                <p>Food catering is always an essential ingredient for any party, corporate event, wedding event, family reunions or baby showers. When your guests attend your event, they will expect to be served with delicious and good food.</p>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <img src="https://www.decornt.com/images/bulk_order.png" alt=""  height="200px" width="300px">
+            <div class="content">
+                <h2>Bulk Ordering</h2>
+                <p>Food catering is always an essential ingredient for any party, corporate event, wedding event, family reunions or baby showers. When your guests attend your event, they will expect to be served with delicious and good food.</p>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <img src="https://thumbs.dreamstime.com/b/food-delivery-man-delivering-food-scooter-food-delivery-man-delivering-food-scooter-isolated-white-background-176181732.jpg" alt="" height="200px" width="300px">
+            <div class="content">
+                <h2>Food Ordering</h2>
+                <p>Food catering is always an essential ingredient for any party, corporate event, wedding event, family reunions or baby showers. When your guests attend your event, they will expect to be served with delicious and good food.</p>
+            </div>
+        </div>
+    </div>
+    
+    <h1 id="scroll_clients">Our Clients</h1>
+    <div id="client">
+        <div class="overlay"></div>
+        <div class="client_container">
+            <div class="box">
+                <a href="https://www.zomato.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="clients"></a>
+
+            </div>
+            <div class="box">
+                <a href="https://www.foodpanda.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtb-XID0x4c1YolP7S4GLLJvnQlHLhWM1cwBmWF_qa_yGrc4CJfXbi3QcBP6Ra7TvUjM&usqp=CAU" alt="clients"></a>
+
+            </div>
+            <div class="box">
+                <a href="https://www.swiggy.com/" target="_blank"><img src="https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2022/05/16165408/swiggy.jpeg" alt="clients"></a>
+
+            </div>
+            <div class="box">
+                <a href="https://www.ubereats.com/" target="_blank"><img src="https://seeklogo.com/images/U/uber-eats-logo-65D72FAA4C-seeklogo.com.png" alt="clients"></a>
+            </div>
+
+        </div>
+
+    </div>
+    <h1 id="scroll_contact" style="font-size: 30px;font-size: 50px;">Contact</h1>
+    <div id="contact">
+        <form method="post" action="">
+            {% csrf_token %}
+
+            <label for="name" style="color:whitesmoke">Name:</label>
+            <input type="text" id="name2" name="name2" placeholder="Enter your name" pattern="[a-zA-Z]{2,15}" required title="Enter valid name">
+            <label for="email" style="color:whitesmoke">Email:</label>
+            <input type="email" id="email2" name="email2" placeholder="Enter your email" pattern="[a-zA-Z0-9$%&*]+@[a-z]+.[a-z]{3,10}" title="Invalid Email...!!">
+            <label for="phone" style="color:whitesmoke">Phone Number:</label>
+            <input type="phone" id="phone2" name="phone2" placeholder="Enter your phone" pattern="^[6-9]{1}[0-9]{9}$" title="Enter valid Phone_number">
+            
+            <br><br>
+            <button type="submit" class="btn btn-primary" class="center">SUBMIT</button>
+        </form>
+    </div>
+    <footer>
+        <div>
+            Copyright © www.bhojan.com. All rights reserved!
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 180,
+            duration: 1500
+        });
+    </script>
+</body>
+</html>
