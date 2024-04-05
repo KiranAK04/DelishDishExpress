@@ -14,13 +14,11 @@ DelishDishExpress is a modern food delivery application built using Django frame
 
 To run DelishDishExpress locally on your machine, follow these steps:
 
-1. Clone the repository:
-git clone https://github.com/your-username/DelishDishExpress.git
-2. Navigate to the project directory:
-   cd DelishDishExpress
-3. Install dependencies:pip install -r requirements.txt
-4. Apply migrations:python manage.py migrate
-5. Start the development server:python manage.py runserver
+1. Clone the repository: git clone https://github.com/your-username/DelishDishExpress.git
+2. Navigate to the project directory: cd DelishDishExpress
+3. Install dependencies: pip install -r requirements.txt
+4. Apply migrations: python manage.py migrate
+5. Start the development server: python manage.py runserver
 6. Open your web browser and visit http://localhost:8000 to access the application.
 
 ## Acknowledgements
